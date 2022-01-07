@@ -1,0 +1,224 @@
+:root {
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+    --white: #fff;
+}
+
+body {
+    font-family: Raleway;
+    color: var(--grayish-blue);
+    font-size: 14px;
+    background: url("images/bg-desktop.png") bottom no-repeat var(--very-dark-blue);
+    background-size: auto;
+    margin: 0 auto;
+    min-height: 700px;
+    padding-top: 150px;
+}
+
+.attribution {
+    padding-bottom: 0;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container-fluid {
+    position: relative;
+    display: flex;
+    width: fit-content;
+}
+
+.left-box {
+    background-color: var(--dark-blue);
+    border-radius: 10px 130px 10px 10px;
+    width: 350px;
+}
+
+.logo {
+    width: fit-content;
+    padding: 10% 10% 10% 10%;
+}
+
+.icons-box {
+    padding-bottom: 10%;
+    margin-left: 10%;
+    display: flex;
+}
+
+.icon {
+    margin: 8px;
+    padding: 13px;
+    text-align: center;
+    min-height: fit-content;
+    min-width: fit-content;
+    border-radius: 10px;
+    background-color: var(--very-dark-blue);
+}
+
+.document {
+    width: 50px;
+}
+
+.right-box {
+    background-color: var(--dark-blue);
+    height: 150px;
+    margin-top: auto;
+    margin-left: 30px;
+    width: 550px;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+.gb-left-box {
+    background: var(--white);
+    border-radius: 10px 10px 0px 10px;
+    width: 180px;
+    height: 65px;
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 3%;
+    text-align: center;
+    z-index: 1;
+}
+
+.gb-left-box:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 00px solid transparent;
+    border-top: 20px solid var(--white);
+    bottom: -20px;
+    right: 0%;
+}
+
+.bolder {
+    color: black;
+    font-size: 2rem;
+    font-family: Raleway;
+    font-weight: 700;
+    margin: auto;
+    padding-top: 6%;
+}
+
+.light {
+    font-size: 14px;
+    font-family: Raleway;
+    font-weight: 700;
+    padding-left: 3%;
+}
+
+.used-gb {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Raleway;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    margin-top: 6%;
+    color: var(--grayish-blue);
+}
+
+.bolter-number {
+    font-size: 14px;
+    font-family: Raleway;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.gb-0 {
+    font-size: 12px;
+    margin-left: 5%;
+    font-family: Raleway;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.gb-1000 {
+    font-size: 12px;
+    margin-left: 77%;
+    color: var(--white);
+    font-family: Raleway;
+    font-weight: 700;
+    text-align: right;
+}
+
+.progress {
+    border-radius: 10px;
+    margin: auto;
+    width: 90%;
+    margin-top: 0;
+    background-color: var(--very-dark-blue);
+    margin-bottom: 1%;
+}
+
+.progress-bar {
+    width: 80%;
+    border-radius: 0 100px 100px 0;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.dote {
+    background-color: var(--white);
+    width: 15px;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: 2px;
+    padding-right: 1px;
+}
+
+@media (max-width: 700px) {
+
+    body {
+        background: url("images/bg-mobile.png") bottom no-repeat var(--very-dark-blue);
+        background-size: 100%;
+    }
+
+    .container-fluid {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+    }
+
+    .left-box {
+        margin: auto;
+    }
+
+    .right-box {
+        margin: 20px auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .gb-1000 {
+        position: relative;
+        margin-left: 70%;
+    }
+
+    .gb-left-box {
+        background: var(--white);
+        border-radius: 10px 10px 10px 10px;
+        width: 180px;
+        height: 65px;
+        margin-top: 340px;
+        margin-left: 25%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .gb-left-box:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left: 00px solid transparent;
+        border-right: 00px solid transparent;
+        border-top: 20px solid var(--white);
+        bottom: -20px;
+        right: 0%;
+    }
